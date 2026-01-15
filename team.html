@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Research Team | Jihadist Leaders Dataset (JLD)</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #ffffff;
+      color: #000000;
+      line-height: 1.5;
+      font-size: 16px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      border-bottom: 1px solid #ccc;
+      padding: 10px 0;
+    }
+
+    nav a {
+      margin: 5px 15px;
+      text-decoration: none;
+      color: #808080;
+      padding-bottom: 5px;
+      font-size: 18px;
+    }
+
+    nav a:hover,
+    nav a.active {
+      border-bottom: 2px solid #3B739E;
+      color: #3B739E;
+      font-weight: bold;
+    }
+
+    /* ↓ slightly narrower page */
+    .page {
+      max-width: 980px;
+      margin: 35px auto;
+      padding: 0 20px;
+      box-sizing: border-box;
+    }
+
+    h1 {
+      font-size: 22px;
+      font-weight: 700;
+      margin: 0 0 18px 0;
+      text-align: center;
+    }
+
+    .team {
+      display: grid;
+      gap: 16px;
+    }
+
+    .member {
+      border: 1px solid #e6e6e6;
+      border-radius: 10px;
+      padding: 14px;
+      max-width: 300px;   /* ← key change: narrower cards */
+      margin: 0 auto;     /* centers card inside its grid cell */
+    }
+
+    .member h2 {
+      font-size: 16px;
+      margin: 0 0 6px 0;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+
+    .member p {
+      margin: 0;
+      font-size: 14px;
+      line-height: 1.4;
+      text-align: left;
+    }
+
+    a {
+      color: #3B739E;
+      text-decoration: none;
+    }
+
+    a:hover {
+      opacity: 0.7;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 11px;
+      margin: 40px 0 20px 0;
+      color: #999;
+    }
+
+    /* Desktop layout */
+    @media (min-width: 1000px) {
+      .team {
+        grid-template-columns: repeat(6, 1fr);
+      }
+
+      /* Top row */
+      .team > .member:nth-child(1) { grid-column: 1 / 3; }
+      .team > .member:nth-child(2) { grid-column: 3 / 5; }
+      .team > .member:nth-child(3) { grid-column: 5 / 7; }
+
+      /* Bottom row (centered pair) */
+      .team > .member:nth-child(4) { grid-column: 2 / 4; }
+      .team > .member:nth-child(5) { grid-column: 4 / 6; }
+    }
+
+    /* Mobile */
+    @media (max-width: 600px) {
+      .team {
+        grid-template-columns: 1fr;
+      }
+
+      .member {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <a href="index.html">About</a>
+    <a href="team.html" class="active">Research Team</a>
+    <a href="download.html">Codebook/Dataset</a>
+    <a href="narratives.html">Narratives</a>
+    <a href="publications.html">Publications</a>
+  </nav>
+
+  <main class="page">
+    <h1>Research Team</h1>
+
+    <section class="team">
+      <article class="member">
+        <h2><a href="https://iprafoundation.org/maria-amjad/" target="_blank" rel="noopener noreferrer">Maria Amjad</a></h2>
+        <p>
+          Maria is a Lecturer at Leiden University’s Institute of Political Science. Her research focuses on how non-state 
+          actors, particularly rebel groups, make decisions during armed conflict. Her dissertation, “Stay the Course or 
+          Backout? Understanding Variation in Rebel Commitment to Peace Processes,” examines rebel decisions related to peace processes.
+        </p>
+      </article>
+
+      <article class="member">
+        <h2><a href="https://www.markberlin2.com/" target="_blank" rel="noopener noreferrer">Mark Berlin</a></h2>
+        <p>
+          Mark is a Postdoctoral Research Associate at Princeton University’s School of Public and International Affairs. 
+          His research interests lie at the intersection of comparative politics and international relations. 
+          He analyzes questions surrounding armed group behavior, civil war dynamics, militant leaders, ideology, 
+          cooperation between armed actors, and civilian victimization.
+        </p>
+      </article>
+
+      <article class="member">
+        <h2><a href="https://www.deval.org/en/about-us/who-we-are/team/dr-sara-daub" target="_blank" rel="noopener noreferrer">Sara Daub</a></h2>
+        <p>
+          Sara is an evaluator at DEval (State Fragility, Conflict Prevention and Governance). Her research is situated 
+          within conflict and migration studies, focusing on non-state actor behavior, external involvement in intrastate conflicts, 
+          and diasporas' foreign policy preferences toward Germany. Her dissertation examined the causes and consequences of external 
+          diaspora support for rebel organizations.
+        </p>
+      </article>
+
+      <article class="member">
+        <h2><a href="https://www.ilaydaonder.com/" target="_blank" rel="noopener noreferrer">Ilayda B. Onder</a></h2>
+        <p>
+          Ilayda is an Assistant Professor at Texas A&amp;M University. Her research investigates political violence and civil 
+          conflict processes with a focus on the intersection of violent political behavior and the socio-organizational dimensions 
+          of rebellion. Her scholarship examines rebel-civilian interactions and rebel communication strategies, with emerging 
+          projects also exploring multi-party civil conflicts and rebel intra-group politics.
+        </p>
+      </article>
+
+      <article class="member">
+        <h2><a href="https://joshfw.github.io/" target="_blank" rel="noopener noreferrer">Joshua Fawcett Weiner</a></h2>
+        <p>
+          Josh is an incoming Research Fellow at the Institute for Advanced Study in Toulouse. His research sits at the 
+          intersection of international relations and comparative politics. Much of his research is driven by two related questions: 
+          how armed groups determine the mix of funding strategies they use during conflict, and how armed group leaders, because 
+          of their past experiences or through networks, shape conflict dynamics.
+        </p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2026 Jihadist Leaders Dataset
+  </footer>
+</body>
+</html>

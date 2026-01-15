@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dataset | Jihadist Leaders Dataset (JLD)</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #ffffff;
+      color: #000000;
+      line-height: 1.5;
+      font-size: 16px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      border-bottom: 1px solid #ccc;
+      padding: 10px 0;
+    }
+
+    nav a {
+      margin: 5px 15px;
+      text-decoration: none;
+      color: #808080;
+      padding-bottom: 5px;
+      font-size: 18px;
+    }
+
+    nav a:hover,
+    nav a.active {
+      border-bottom: 2px solid #3B739E;
+      color: #3B739E;
+      font-weight: bold;
+    }
+
+    .page {
+      max-width: 900px;
+      margin: 35px auto;
+      padding: 0 20px;
+      box-sizing: border-box;
+    }
+
+    h1 {
+      font-size: 22px;
+      font-weight: 700;
+      margin: 0 0 18px 0;
+      text-align: center;
+    }
+
+    p {
+      margin: 0 0 16px 0;
+      text-align: justify;
+    }
+
+    .downloads {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-top: 18px;
+    }
+
+    .card {
+      border: 1px solid #e6e6e6;
+      border-radius: 10px;
+      padding: 18px;
+    }
+
+    .card h2 {
+      font-size: 18px;
+      margin: 0 0 8px 0;
+      font-weight: 700;
+    }
+
+    .card p {
+      margin: 0 0 14px 0;
+      text-align: left;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 14px;
+      border-radius: 8px;
+      border: 1px solid #3B739E;
+      color: #3B739E;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .btn:hover {
+      opacity: 0.75;
+    }
+
+    .filehint {
+      font-size: 13px;
+      color: #444;
+      margin-top: 8px;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 11px;
+      margin: 40px 0 20px 0;
+      color: #999;
+    }
+
+    @media (max-width: 700px) {
+      .downloads {
+        grid-template-columns: 1fr;
+      }
+
+      nav a {
+        margin: 5px 10px;
+        font-size: 16px;
+      }
+
+      p {
+        text-align: left;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <a href="index.html">About</a>
+    <a href="team.html">Research Team</a>
+    <a href="download.html" class="active">Codebook/Dataset</a>
+    <a href="narratives.html">Narratives</a>
+    <a href="publications.html">Publications</a>
+  </nav>
+
+  <main class="page">
+    <h1>Codebook and Dataset</h1>
+
+    <p>
+        The Jihadist Leaders Dataset (JLD) is a living dataset. The version released here corresponds to the dataset used in our
+        data release article forthcoming in the <i>Journal of Peace Research</i>. At the same time, we continuously update the
+        JLD multiple times per year as new information becomes available, leadership changes occur within existing organizations,
+        and new jihadist groups and leaders are identified and added to the dataset. The most up-to-date version of the JLD can
+        always be downloaded from this page.
+    </p>
+
+    <section class="downloads">
+        <div class="card">
+            <h2>Codebook (PDF)</h2>
+            <p>Full variable descriptions and coding decisions.</p>
+            <a class="btn" href="JLD_Codebook.pdf" target="_blank" rel="noopener noreferrer">
+              View Codebook
+            </a>
+            <div class="filehint">File: JLD_Codebook.pdf</div>
+          </div>          
+
+      <div class="card">
+        <h2>Dataset (Excel)</h2>
+        <p>JLD data in .xlsx format.</p>
+        <!-- Update the href to your actual Excel filename/path -->
+        <a class="btn" href="JLD_Dataset.xlsx" download>Download Dataset</a>
+        <div class="filehint">File: JLD_Dataset.xlsx</div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2026 Jihadist Leaders Dataset
+  </footer>
+</body>
+</html>

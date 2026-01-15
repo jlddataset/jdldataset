@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jihadist Leaders Dataset (JLD)</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #ffffff;
+      color: #000000;
+      line-height: 1.5;
+      font-size: 16px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      border-bottom: 1px solid #ccc;
+      padding: 10px 0;
+    }
+
+    nav a {
+      margin: 5px 15px;
+      text-decoration: none;
+      color: #808080;
+      padding-bottom: 5px;
+      font-size: 18px;
+    }
+
+    nav a:hover,
+    nav a.active {
+      border-bottom: 2px solid #3B739E;
+      color: #3B739E;
+      font-weight: bold;
+    }
+
+    .page {
+      max-width: 900px;
+      margin: 35px auto;
+      padding: 0 20px;
+      box-sizing: border-box;
+    }
+
+    h1 {
+      font-size: 24px;
+      font-weight: 700;
+      margin: 0 0 18px 0;
+      text-align: center;
+    }
+
+    /* CARD STYLE (shared across pages) */
+    .card {
+      border: 1px solid #e6e6e6;
+      border-radius: 10px;
+      padding: 18px;
+      margin-bottom: 18px;
+    }
+
+    p {
+      margin: 0 0 14px 0;
+      text-align: justify;
+    }
+
+    /* IMAGE + DESCRIPTION SIDE-BY-SIDE */
+    .two-col {
+      display: flex;
+      gap: 18px;
+      align-items: center;
+    }
+
+    .map-image {
+      width: 100%;
+      max-width: 430px;
+      height: auto;
+      border-radius: 8px;
+      border: 1px solid #e6e6e6;
+      flex: 0 0 auto;
+    }
+
+    .two-col .text {
+      flex: 1 1 auto;
+      min-width: 0;
+    }
+
+    .citation {
+      font-size: 15px;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 11px;
+      margin: 40px 0 20px 0;
+      color: #999;
+    }
+
+    @media (max-width: 700px) {
+      .two-col {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .map-image {
+        max-width: 260px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .page {
+        margin: 20px auto;
+      }
+
+      h1 {
+        font-size: 20px;
+      }
+
+      p {
+        text-align: left;
+      }
+
+      nav a {
+        margin: 5px 10px;
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <a href="index.html" class="active">About</a>
+    <a href="team.html">Research Team</a>
+    <a href="download.html">Codebook/Dataset</a>
+    <a href="narratives.html">Narratives</a>
+    <a href="publications.html">Publications</a>
+  </nav>
+
+  <main class="page">
+    <h1>Jihadist Leaders Dataset (JLD)</h1>
+
+    <div class="card two-col">
+      <img src="Map1Color.png" alt="Map showing dataset coverage" class="map-image" />
+
+      <div class="text">
+        <p>
+          The Jihadist Leaders Dataset (JLD) provides provides original data on the biographical attributes of 238 leaders 
+          from 110 jihadist groups. We conceptualize jihadist groups as an ideological subset of armed 
+          groups—non-state actors that use violence to achieve political objectives. This allows us 
+          to explore variation among a broad range of leaders of jihadist groups operating across Africa, Asia, 
+          and the Middle East between 1976 and 2023. Drawing on Arabic, English, French, German, Turkish, and Urdu sources, 
+          the JLD contains information on 31 leader-level variables, providing new insights into how militant leaders’ 
+          backgrounds and prior experiences shape their decision-making.
+        </p>
+      </div>
+    </div>
+
+    <div class="card citation">
+      <p>
+        <b>Please cite as:</b> Amjad, Maria, Mark Berlin, Sara Daub, Ilayda B. Onder, and Joshua
+        Fawcett Weiner. 2026. “Commanders of the Mujahideen: Introducing the Jihadist Leaders
+        Dataset.” <i>Journal of Peace Research</i>.
+      </p>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2026 Jihadist Leaders Dataset
+  </footer>
+</body>
+</html>
