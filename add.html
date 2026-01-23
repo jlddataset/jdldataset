@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Add to JLD | Jihadist Leaders Dataset (JLD)</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #ffffff;
+      color: #000000;
+      line-height: 1.5;
+      font-size: 16px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      border-bottom: 1px solid #ccc;
+      padding: 10px 0;
+    }
+
+    nav a {
+      margin: 5px 15px;
+      text-decoration: none;
+      color: #808080;
+      padding-bottom: 5px;
+      font-size: 18px;
+    }
+
+    nav a:hover,
+    nav a.active {
+      border-bottom: 2px solid #3B739E;
+      color: #3B739E;
+      font-weight: bold;
+    }
+
+    .page {
+      max-width: 900px;
+      margin: 35px auto;
+      padding: 0 20px;
+      box-sizing: border-box;
+    }
+
+    h1 {
+      font-size: 22px;
+      font-weight: 700;
+      margin: 0 0 18px 0;
+      text-align: center;
+    }
+
+    p {
+      margin: 0 0 14px 0;
+      text-align: justify;
+    }
+
+    .card {
+      border: 1px solid #e6e6e6;
+      border-radius: 10px;
+      padding: 18px;
+      margin-top: 18px;
+    }
+
+    form {
+      display: grid;
+      gap: 12px;
+    }
+
+    label {
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 4px;
+      display: block;
+    }
+
+    input, textarea {
+      width: 100%;
+      box-sizing: border-box;
+      border: 1px solid #d9d9d9;
+      border-radius: 8px;
+      padding: 10px 10px;
+      font-size: 14px;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #ffffff;
+      color: #000000;
+    }
+
+    textarea {
+      min-height: 140px;
+      resize: vertical;
+    }
+
+    .field {
+      display: grid;
+      gap: 6px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 14px;
+      border-radius: 8px;
+      border: 1px solid #3B739E;
+      background: #ffffff;
+      color: #3B739E;
+      font-weight: 700;
+      font-size: 14px;
+      cursor: pointer;
+      width: fit-content;
+    }
+
+    .btn:hover {
+      opacity: 0.75;
+    }
+
+    .note {
+      font-size: 13px;
+      color: #444;
+      margin-top: 10px;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 11px;
+      margin: 40px 0 20px 0;
+      color: #999;
+    }
+
+    @media (max-width: 600px) {
+      .page {
+        margin: 20px auto;
+      }
+
+      nav a {
+        margin: 5px 10px;
+        font-size: 16px;
+      }
+
+      p {
+        text-align: left;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <a href="index.html">About</a>
+    <a href="team.html">Research Team</a>
+    <a href="download.html">Codebook/Dataset</a>
+    <a href="narratives.html">Narratives</a>
+    <a href="publications.html">Publications</a>
+    <a href="add.html" class="active">Add to JLD</a>
+  </nav>
+
+  <main class="page">
+    <h1>Add to JLD</h1>
+
+    <div class="card">
+      <p>
+        Our goal is to improve the Jihadist Leaders Dataset by crowdsourcing new information on jihadist leaders and errors found in our initial coding.
+      </p>
+      <p>
+        If you have any relevant information on specific leaders or identify any errors in the current version of our dataset, please notify us by filling out the form below.
+      </p>
+    </div>
+
+    <div class="card">
+      <!--
+        IMPORTANT:
+        A plain HTML file cannot directly "send form responses to an email address" by itself.
+        The mailto method below opens the user's email client with the form content.
+        If you want true server-side submission (no email client), you need a form backend (e.g., Formspree, Netlify Forms, Google Forms).
+      -->
+      <form action="https://formspree.io/f/xykedbyo" method="POST">
+        <div class="field">
+          <label for="name">1. Your Name</label>
+          <input id="name" name="name" type="text" required />
+        </div>
+      
+        <div class="field">
+          <label for="affiliation">2. Your affiliation</label>
+          <input id="affiliation" name="affiliation" type="text" required />
+        </div>
+      
+        <div class="field">
+          <label for="email">3. Your email</label>
+          <input id="email" name="email" type="email" required />
+        </div>
+      
+        <div class="field">
+          <label for="leader">4. Jihadist Leader's name you want to provide information about</label>
+          <input id="leader" name="leader_name" type="text" required />
+        </div>
+      
+        <div class="field">
+          <label for="details">
+            5. Please describe the update, addition, or correction about the leader. Please provide at least one reliable source as evidence.
+          </label>
+          <textarea id="details" name="details_and_sources" required></textarea>
+        </div>
+      
+        <!-- Spam protection (honeypot). Keep hidden. -->
+        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
+      
+        <!-- Optional email subject line -->
+        <input type="hidden" name="_subject" value="New JLD submission (Add to JLD form)" />
+      
+        <button class="btn" type="submit">Submit</button>
+      
+        <div class="note">
+          Submissions are sent securely to the JLD team for review.
+        </div>
+      </form>
+      
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2026 Jihadist Leaders Dataset
+  </footer>
+</body>
+</html>
